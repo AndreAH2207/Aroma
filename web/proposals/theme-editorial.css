@@ -1,0 +1,46 @@
+/* ============================================================
+   PROPUESTA A — "Editorial Blanco"
+   Lujo silencioso: blanco puro, un solo acento oliva, líneas
+   finas, esquinas casi rectas, sin sombras pesadas. Minimal.
+   (Overlay sobre styles.css — solo redefine tokens y bordes.)
+   ============================================================ */
+:root {
+  --cream-soft: #ffffff;   /* fondo principal */
+  --cream: #f6f5f2;
+  --white: #ffffff;        /* tarjetas y secciones alternas */
+  --ink: #191916;
+  --muted: #726f66;
+  --teal: #47562f;         /* acento oliva profundo (único) */
+  --teal-dark: #333f21;
+  --coral: #47562f;        /* monocromo: CTA y precios comparten acento */
+  --coral-dark: #333f21;
+  --pink: #47562f;
+  --sunny: #47562f;
+  --gold: #ded9cd;         /* dorado -> hairline neutro */
+  --espresso: #191916;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --radius: 3px;           /* esquinas crisp */
+}
+
+/* Plano y editorial: bordes hairline, sin sombras cargadas */
+.product-card,
+.payment-card,
+.value-card,
+.step,
+.testi-card,
+.faq-item,
+.featured {
+  box-shadow: none;
+  border-color: #e7e5de;
+}
+.product-card { transition: border-color 0.2s, transform 0.2s; }
+.product-card:hover { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06); }
+
+.topbar { background: #191916; color: #ffffff; }
+.header { border-bottom: 1px solid #ecebe6; }
+.hero { background: #ffffff; border-bottom: 1px solid #efeee9; }
+.chip { background: #ffffff; border-color: #ddd9cf; color: #47562f; }
+.chip:hover { background: #47562f; color: #ffffff; border-color: #47562f; }
+.btn-primary { background: #191916; color: #ffffff; }
+.btn-primary:hover { background: #47562f; }
+.value-icon { border-color: #ded9cd; background: #faf9f6; }
